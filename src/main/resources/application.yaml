@@ -1,0 +1,24 @@
+info:
+  component: inventory
+server:
+  port: 9091
+
+---
+
+spring:
+  profiles: test
+  datasource:
+    platform: h2
+    initialize: true
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:inventory;MVCC=true;DB_CLOSE_DELAY=-1;MODE=PostgreSQL
+
+---
+
+spring:
+  profiles: dev
+  datasource:
+    platform: h2
+    initialize: true
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:inventory;MVCC=true;DB_CLOSE_DELAY=-1;MODE=PostgreSQL

@@ -1,0 +1,5 @@
+{
+	"type": "inventory_adjustment",
+	"itemId": "item001",
+	"adjustment": -5
+}
